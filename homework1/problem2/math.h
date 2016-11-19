@@ -1,0 +1,1 @@
+double absolute(double x);
