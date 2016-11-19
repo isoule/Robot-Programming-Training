@@ -9,6 +9,8 @@ class Robot {
 		int getPosition();
 		int getArmPosition();
 		int getScore();
+		
+		void getStatus();
 
 	private:
 		int robotPosition;
