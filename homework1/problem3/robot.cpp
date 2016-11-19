@@ -1,3 +1,4 @@
+#include <iostream> 
 #include "robot.h"
 
 void Robot::drive(int distance) {
@@ -31,6 +32,10 @@ int Robot::getScore() {
 }
 
 void Robot::getStatus() {
+	std::cout << "Postion: " << robotPosition << std::endl;
+	std::cout << "Arm position: " << armPosition << std::endl;
+	std::cout << "Has piece: " << piece << std::endl;
+	std::cout << "Score: " << score << std::endl;
 }
 
 int robotPosition = 0;
