@@ -1,3 +1,6 @@
+#ifndef robot
+#define robot
+
 class Robot {
 
 	public:
@@ -19,3 +22,5 @@ class Robot {
 	       	bool piece;
 		
 };
+
+#endif
