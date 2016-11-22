@@ -10,16 +10,16 @@ int main() {
 	Bobby.drive(3);
 	Bobby.moveArmTo(3);
 	Bobby.pickUpPiece();
-	Bobby.getStatus();
+	Bobby.printStatus();
 
 	Bobby.moveArmTo(0);
 	Bobby.pickUpPiece();
-	Bobby.getStatus();
+	Bobby.printStatus();
 
 	Bobby.drive(3);
 	Bobby.moveArmTo(10);
 	Bobby.scorePiece();
-	Bobby.getStatus();
+	Bobby.printStatus();
 
 	return 0;
 }

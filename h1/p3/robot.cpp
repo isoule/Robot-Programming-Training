@@ -49,14 +49,9 @@ int Robot::getScore() {
 
 //Prints robot status to console.
 //Needed a way to check to make sure the functions worked.
-void Robot::getStatus() {
+void Robot::printStatus() {
 	std::cout << "Postion: " << robotPosition << std::endl;
 	std::cout << "Arm position: " << armPosition << std::endl;
 	std::cout << "Has piece: " << piece << std::endl;
 	std::cout << "Score: " << score << std::endl;
 }
-
-int robotPosition = 0;
-int armPosition =  0;
-int score = 0;
-bool piece = false;

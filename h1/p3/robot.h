@@ -13,13 +13,13 @@ class Robot {
 		int getArmPosition();
 		int getScore();
 		
-		void getStatus();
+		void printStatus();
 
 	private:
-		int robotPosition;
-		int armPosition;
-		int score;
-	       	bool piece;
+		int robotPosition = 0;
+		int armPosition = 0;
+		int score = 0;
+	       	bool piece = false;
 		
 };
 
