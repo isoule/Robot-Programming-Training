@@ -6,4 +6,4 @@ class Patron {
   std::vector<Book> patron_;
 };
 
-#endif
+#endif // PATRIN_H_
