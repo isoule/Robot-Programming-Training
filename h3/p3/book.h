@@ -1,14 +1,16 @@
 #ifndef BOOK_H_
 #define BOOK_H_
 
+#include <string>
+
 class Book {
  public:
-  std::string title_;
+  const std::string title_;
   bool checked_in_;
 
-  Book(sdt::string, bool);
+  Book(std::string, bool);
 
-  void get_checked();
+  void get_checked_status() const;
 };
 
 #endif

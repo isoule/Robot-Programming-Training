@@ -1,10 +1,10 @@
-#include <string>
-
 #include "book.h"
+
+#include <string>
 
 Book::Book(std::string title, bool checked_in) {
   title_ = title;
   checked_in_ = checked_in;
 }
 
-Book::get_checked() { return checked_in_; }
+Book::get_checked_status() const { return checked_in_; }
