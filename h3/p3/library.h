@@ -4,9 +4,9 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <map>
 
 #include "book.h"
-#include "date.h"
 #include "patron.h"
 
 class Library {
@@ -14,11 +14,15 @@ class Library {
   //Need to keep track of all dem books
   std::vector<Book> library_;
   //Need to keep track of all dem patrons
-  std::vector<Patron> patrons_;
+  std::map<std::string, Patron> members_;
 
   //Need to be able to:
+
   //Add books
+  void AddBook(); 
+
   //Add patrons
+  void AddMember(); 
   //Checkout/return books
   //See what is available
   //See who has checked out what
