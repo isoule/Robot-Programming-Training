@@ -2,9 +2,9 @@
 
 #include <string>
 
-Book::Book(std::string title, bool checked_in) {
-  title_ = title;
-  checked_in_ = checked_in;
-}
+Book::Book(std::string title, bool checked_in)
+    : title_(title), checked_in_(checked_in) {}
 
-Book::get_checked_status() const { return checked_in_; }
+void ChangeBookStatus() { checked_in_ = !checked_in_; }
+
+bool Book::get_checked_status() const { return checked_in_; }

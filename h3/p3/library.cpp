@@ -5,7 +5,7 @@
 #include <iostream>
 
 //Add books
-Library::AddBook() {
+void Library::AddBook() {
   std::cout << "Title of book: " << std::endl;
   std::string new_title;
   std::cin >> new_title;
@@ -14,7 +14,7 @@ Library::AddBook() {
 }
 
 //Add patrons
-Library::AddMember() {
+void Library::AddMember() {
   std::cout << "Last name: " << std::endl;
   std::string last_name;
   std::cin >> last_name;
@@ -23,11 +23,16 @@ Library::AddMember() {
 }
 
 //Checkout books
-Library::CheckOutBook() {
+void Library::CheckOutBook() {
+  //User inputs the title to find
   std::cout << "Which title: " << std::endl;
   std::string find_title;
+  std::cin >> find_title;
+  //Find Book w/ title in library_
+  auto found_book = library_.find(find_title);
+  //Change Book.checked_in_ to false
+  found_book*.ChangeBookStatus();
+  //Add title and book to Patron
 
-  auto found_book = std::find(std::begin(library_), 
-                              std::end(library_),
-                              Book //How to access book title???
 
+} 

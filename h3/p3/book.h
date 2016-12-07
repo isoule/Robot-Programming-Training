@@ -5,12 +5,15 @@
 
 class Book {
  public:
+  Book(std::string, bool);
+  // Methods
+  void ChangeBookStatus();
+  // Getter func
+  bool get_checked_status() const;
+
+ private:
   const std::string title_;
   bool checked_in_;
-
-  Book(std::string, bool);
-
-  void get_checked_status() const;
 };
 
 #endif
