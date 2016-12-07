@@ -12,3 +12,19 @@ cc_library(
   ],
   visibility = ["//visibility:public"]
 )
+
+cc_binary(
+  name = "main",
+  hdrs = [
+    "library.h",
+    "patron.",  
+    "book.h"
+  ],
+  srcs = [
+    "library.cpp",
+    "patron.cpp",
+    "book.cpp"
+  ],
+  deps = ["//:library"],
+  visibility = ["//visibility:public"]
+)

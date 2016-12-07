@@ -1,4 +1,6 @@
 #include "library.h"
+#include "patron."
+#include "book.h"
 
 #include <string>
 #include <vector>
