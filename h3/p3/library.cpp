@@ -21,3 +21,13 @@ Library::AddMember() {
   //No current checked out books = NULL
   members_[last_name] = NULL;
 }
+
+//Checkout books
+Library::CheckOutBook() {
+  std::cout << "Which title: " << std::endl;
+  std::string find_title;
+
+  auto found_book = std::find(std::begin(library_), 
+                              std::end(library_),
+                              Book //How to access book title???
+

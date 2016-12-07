@@ -23,7 +23,13 @@ class Library {
 
   //Add patrons
   void AddMember(); 
-  //Checkout/return books
+
+  //Checkout books
+  void CheckOutBook();
+
+  //Return books
+  void ReturnBook();
+
   //See what is available
   //See who has checked out what
 };
