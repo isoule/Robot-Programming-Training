@@ -6,6 +6,7 @@
 class Book {
  public:
   Book(std::string, bool);
+
   // Methods
   void ChangeBookStatus();
   // Getter func

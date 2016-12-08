@@ -15,16 +15,9 @@ cc_library(
 
 cc_binary(
   name = "main",
-  hdrs = [
-    "library.h",
-    "patron.",  
-    "book.h"
-  ],
   srcs = [
-    "library.cpp",
-    "patron.cpp",
-    "book.cpp"
+      "main.cpp",
   ],
-  deps = ["//:library"],
+  deps = [":library"],
   visibility = ["//visibility:public"]
 )
