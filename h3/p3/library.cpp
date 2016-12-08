@@ -39,7 +39,7 @@ void Library::AddMember() {
   //Change Book.checked_in_ to false
   found_book->second.ChangeBookStatus();
   //Add title and book to Patron
-  members_[patron_name].insert(found_book->first, found_book->second); //Not working
+  members_[patron_name].patron_books_.push_back(found_book->second); //Not working
   //BEGIN WORKING HERE!!!
   //Need to figure out the nesting of Book within Patron within Library
   //BEGIN WORKING HERE!!!

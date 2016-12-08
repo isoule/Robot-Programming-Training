@@ -3,11 +3,11 @@
 
 #include "book.h"
 
-#include <map>
+#include <vector>
 
 class Patron {
  public:
-  std::map<std::string, Book> patron_books_;
+  std::vector<Book> patron_books_;
 };
 
 #endif // PATRON_H_
