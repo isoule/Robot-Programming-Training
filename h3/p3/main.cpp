@@ -3,6 +3,7 @@
 #include "patron.h"
 
 #include <iostream>
+#include <string>
 
 int main() {
 
@@ -21,7 +22,7 @@ int main() {
     std::cout << "6. Exit" << std::endl;
     std::cout << "Enter task #: " << std::endl;
     int u_i;
-    std::cin >> u_i;
+    std::getline(std::cin, u_i);
 
     if (u_i == 1) {
       Ion.AddBook();
@@ -37,6 +38,5 @@ int main() {
       break;
     }
   }
-
   return 0;
 }

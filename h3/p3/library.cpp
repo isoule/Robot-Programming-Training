@@ -11,7 +11,7 @@
 void Library::AddBook() {
   std::cout << "Title of book: " << std::endl;
   std::string new_title;
-  std::cin >> new_title;
+  std::getline(std::cin, new_title);
   Book new_book(new_title, true);
   library_.insert(std::make_pair(new_title, new_book));
 }
@@ -20,7 +20,7 @@ void Library::AddBook() {
 void Library::AddMember() {
   std::cout << "Last name: " << std::endl;
   std::string last_name;
-  std::cin >> last_name;
+  std::getline(std::cin, last_name);
   members_[last_name] = Patron{};
 }
 
@@ -29,11 +29,11 @@ void Library::CheckOutBook() {
   // Which patron?
   std::cout << "Name: " << std::endl;
   std::string patron_name;
-  std::cin >> patron_name;
+  std::getline(std::cin, patron_name);
   // User inputs the title to find
   std::cout << "Which title: " << std::endl;
   std::string find_title;
-  std::cin >> find_title;
+  std::getline(std::cin, find_title);
   // Find Book w/ title in library_
   auto found_book = library_.find(find_title);
   // Change Book.checked_in_ to false
@@ -46,10 +46,10 @@ void Library::CheckOutBook() {
 void Library::ReturnBook() {
   std::cout << "Name: " << std::endl;
   std::string patron_name;
-  std::cin >> patron_name;
+  std::getline(std::cin, patron_name);
   std::cout << "Which title do you want to return: " << std::endl;
   std::string return_title;
-  std::cin >> return_title;
+  std::getline(std::cin, return_title);
   auto returned_book = library_.find(return_title);
   returned_book->second.ChangeBookStatus();
   //Remove book from Patron.patron_books_
