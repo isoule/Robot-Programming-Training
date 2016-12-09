@@ -7,6 +7,9 @@
 
 class Patron {
  public:
+  void AddPatronBook(Book);
+  void RemovePatronBook(Book);
+ private:
   std::vector<Book> patron_books_;
 };
 

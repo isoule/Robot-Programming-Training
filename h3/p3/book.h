@@ -11,6 +11,7 @@ class Book {
   void ChangeBookStatus();
   // Getter func
   bool get_checked_status() const;
+  std::string get_title() const;
 
  private:
   const std::string title_;
