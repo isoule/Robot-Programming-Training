@@ -1,6 +1,6 @@
-#include "book.h"
 #include "library.h"
 #include "patron.h"
+#include "book.h"
 
 #include <iostream>
 #include <string>
@@ -12,6 +12,7 @@ int main() {
 
   // Get user input
   // With all of the options in library.h
+  int u_i;
 
   while (true) {
     std::cout << "1. Add book" << std::endl;
@@ -21,8 +22,7 @@ int main() {
     std::cout << "5. Print status" << std::endl;
     std::cout << "6. Exit" << std::endl;
     std::cout << "Enter task #: " << std::endl;
-    int u_i;
-    std::getline(std::cin, u_i);
+    std::cin >> u_i;
 
     if (u_i == 1) {
       Ion.AddBook();
