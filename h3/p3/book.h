@@ -14,7 +14,7 @@ class Book {
   std::string get_title() const;
 
  private:
-  const std::string title_;
+  std::string title_;
   bool checked_in_;
 };
 
