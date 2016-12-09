@@ -54,5 +54,4 @@ void Library::ReturnBook() {
   returned_book->second.ChangeBookStatus();
   //Remove book from Patron.patron_books_
   members_[patron_name].RemovePatronBook(returned_book->second);
-
 }

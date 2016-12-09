@@ -13,6 +13,8 @@ void Patron::RemovePatronBook(Book remove_book) {
   look_title = remove_book.get_title();
   for (int address = 0; address < patron_books_.size(); address++) {
     if (patron_books_[address].get_title() == look_title) {
+      std::swap(patron_books_[address], patron_books_.back());
+      patron_books_.pop_back();
       break;
     }
   }
