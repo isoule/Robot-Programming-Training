@@ -55,3 +55,16 @@ void Library::ReturnBook() {
   //Remove book from Patron.patron_books_
   members_[patron_name].RemovePatronBook(returned_book->second);
 }
+
+//Get status
+void Library::print_status() const {
+  std::cout << "Books in library:" << std::endl;
+  for (const auto& library_pair : library_) {
+    std::cout << " -" << library_pair.first << ", ";
+    if (library_pair.second.get_checked_status() == true) {
+      std::cout << "available" << std::endl;
+    } else {
+      std::cout << "unavailable" << std::endl;
+    }
+  }
+}

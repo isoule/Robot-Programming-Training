@@ -20,8 +20,8 @@ class Library {
   void CheckOutBook();
   //Return books
   void ReturnBook();
-  //See what is available
   //See who has checked out what
+  void print_status() const;
  private:
   //Need to keep track of books <title, Book>
   std::map<std::string, Book> library_;
