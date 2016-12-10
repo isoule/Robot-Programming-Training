@@ -15,9 +15,7 @@ cc_library(
 
 cc_binary(
   name = "main",
-  srcs = [
-      "main.cpp",
-  ],
+  srcs = ["main.cpp"],
   deps = [":library"],
   visibility = ["//visibility:public"]
 )
